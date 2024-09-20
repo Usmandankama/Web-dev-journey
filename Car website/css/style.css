@@ -1,77 +1,89 @@
-*{
+/* General styles to reset padding and margin, ensure consistent box-sizing, and set default font properties */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
-    color: whitesmoke;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke; /* Default text color for all elements */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Default font family */
 }
 
-.hero_banner{
-    height: 100vh;
-    width: 100%;
-    background-image: url(../images/car2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+/* Styles for the full-page hero banner */
+.hero_banner {
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    background-image: url(../images/car2.jpg); /* Background image for the banner */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: cover; /* Ensure the background image covers the entire area */
 }
 
-.blur{
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+/* Adds a dark transparent overlay to the hero banner for better contrast with text */
+.blur {
+    height: 100%; /* Full height of the hero banner */
+    width: 100%; /* Full width of the hero banner */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
 }
 
-.brand_title{
-    color: white;
-    font-size: 200px;
-    text-align: center;
+/* Style for the brand title */
+.brand_title {
+    color: white; /* White text color */
+    font-size: 200px; /* Very large font size */
+    text-align: center; /* Center the text */
 }
 
-.navigation_items{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
+/* Navigation bar styles */
+.navigation_items {
+    display: flex; /* Flexbox layout to arrange items horizontally */
+    justify-content: space-between; /* Space between the navigation items */
+    padding-left: 20px; /* Left padding for alignment */
+    padding-right: 20px; /* Right padding for alignment */
 }
 
-.nav_links{
-    display: flex;
+/* Flex container for navigation links */
+.nav_links {
+    display: flex; /* Flexbox layout for horizontal arrangement */
 }
 
-.nav_links a{
-    margin-left: 20px;
-    font-size: 20px;
-    font-weight: 700;
+/* Styling for each navigation link */
+.nav_links a {
+    margin-left: 20px; /* Spacing between navigation links */
+    font-size: 20px; /* Set font size */
+    font-weight: 700; /* Bold text */
 }
 
-.location_time,contct{
-    font-size: 20px;
-    font-weight: 700;
+/* Styles for location and contact info in the navigation bar */
+.location_time, .contct {
+    font-size: 20px; /* Set font size */
+    font-weight: 700; /* Bold text */
 }
 
-.promo_banner{
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-    width: 95%;
-    margin-top: 380px;
-    background-color: rgba(255, 255, 255, 0.708);
-    padding: 20px;
-    border-radius: 5px;
-    margin-left: 30px;
-}
-.promo_banner p{
-    width: 700px;
-    color: black;
+/* Styles for the promo banner */
+.promo_banner {
+    display: flex; /* Flexbox layout to arrange content horizontally */
+    justify-content: space-between; /* Space between the elements inside the promo banner */
+    height: 100px; /* Fixed height */
+    width: 95%; /* Almost full width of the screen */
+    margin-top: 380px; /* Position the banner lower on the page */
+    background-color: rgba(255, 255, 255, 0.708); /* Semi-transparent white background */
+    padding: 20px; /* Padding inside the promo banner */
+    border-radius: 5px; /* Rounded corners */
+    margin-left: 30px; /* Left margin to position the banner */
 }
 
-.promo_banner button{
-    background-color: black;
-    width: 200px;
-    height: 50px;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    font-weight: 800;
+/* Styles for text inside the promo banner */
+.promo_banner p {
+    width: 700px; /* Set a fixed width for the paragraph */
+    color: black; /* Black text color for contrast */
+}
+
+/* Styles for the button inside the promo banner */
+.promo_banner button {
+    background-color: black; /* Black button background */
+    width: 200px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    border-radius: 5px; /* Rounded corners for the button */
+    outline: none; /* Remove default outline */
+    border: none; /* Remove border */
+    font-weight: 800; /* Extra bold text */
 }
