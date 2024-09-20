@@ -4,6 +4,8 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .hero_banner{
@@ -12,4 +14,64 @@
     background-image: url(../images/car2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.blur{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.brand_title{
+    color: white;
+    font-size: 200px;
+    text-align: center;
+}
+
+.navigation_items{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav_links{
+    display: flex;
+}
+
+.nav_links a{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.location_time,contct{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.promo_banner{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 95%;
+    margin-top: 380px;
+    background-color: rgba(255, 255, 255, 0.708);
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+.promo_banner p{
+    width: 700px;
+    color: black;
+}
+
+.promo_banner button{
+    background-color: black;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-weight: 800;
 }
